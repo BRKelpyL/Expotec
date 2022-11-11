@@ -18,25 +18,24 @@ body {
 
 /* Small Dimension */
 
-.presentation {
+.presentation, .presentation-texts {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.presentation p {
-    font-size: calc(12px + 1.5vw);
-    font-weight: bold;
-    margin: 5px 0;
 }
 
 .presentation img {
-    width: 95%;
+    width: 90%;
 }
 
-.link-container, .programation-container {
+.presentation-texts p {
+    font-size: calc(12px + 1.5vw);
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.link-container, .programmation-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -56,42 +55,48 @@ body {
     width: fit-content;
     margin: 0 auto;
     text-decoration: none;
-    font-size: calc(10px + 1.5vw)
 }
 
 .link p {
     margin-bottom: 12px;
+    font-size: calc(10px + 1.5vw)
 }
 
 .link a {
     padding: 12px;
     background-color: green;
     border-radius: 8px;
+    font-size: calc(6px + 1.5vw)
 }
 
 .link p, .link a{
     color: whitesmoke;
 }
 
-.link p, .link a{
-    color: whitesmoke;
+.programmations {
+    padding: 20px;
 }
 
-/* .programations {} */
+.themed-rooms, .lectures {
+    background-color: gainsboro;
+}
 
-.programations p {
+.programmations .programmations-title {
+    font-size: calc(10px + 1.5vw);
     text-align: center;
 }
 
 table {
-    width: 98vw;
+    width: 80vw;
     border-collapse: collapse;
     margin: 10px auto;
 }
 
+
 table, td, th {
     border: 2px solid;
     text-align: center;
+    font-size: calc(6px + 1.5vw);
 }
 
 .footer {
@@ -104,9 +109,98 @@ table, td, th {
     color: whitesmoke;
     justify-content: center;
     align-items: center;
-    font-size: calc(7px + 1.6vw);
+    font-size: calc(6px + 1.5vw);
 }
 
 .footer a {
     color: whitesmoke;
+}
+
+@media (min-width: 500px) and (max-width: 590px) {
+    .presentation-texts p {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 590px) {
+    .presentation {
+        flex-direction: row;
+    }
+
+    .presentation img {
+        width: 45%;
+    }
+
+    .presentation-texts p {
+        font-size: calc(10px + 1vw);
+    }
+
+    .link p {
+        font-size: calc(10px + 1vw);
+    }
+
+    .link a {
+        font-size: calc(6px + 1vw);
+    }
+
+    .programmations .programmations-title {
+        font-size: calc(10px + 1vw);
+        text-align: center;
+    }
+
+    table {
+        width: 75vw;
+    }
+
+    table, td, th {
+        border: 2px solid;
+        text-align: center;
+        font-size: calc(6px + 1vw);
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 850px) {
+    .presentation-texts p {
+        font-size: calc(12px + 0.7vw);
+    }
+
+    .link p {
+        font-size: calc(10px + 0.7vw);
+    }
+
+    .link a {
+        font-size: calc(8px + 0.7vw);
+    }
+
+    .programmations .programmations-title {
+        font-size: calc(10px + 0.7vw);
+        text-align: center;
+    }
+
+    .programmations p {
+        width: fit-content;
+        padding: 8px;
+        border-radius: 4px;
+        margin: 15px auto;
+        font-size: calc(3px + 0.8vw);
+        background-color: grey;
+    }
+
+    table, td, th {
+        border: 2px solid;
+        text-align: center;
+        font-size: calc(6px + 0.7vw);
+    }
+
+    .footer {
+        font-size: 16px;
+    }
 }
