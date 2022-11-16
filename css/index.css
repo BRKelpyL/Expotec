@@ -30,7 +30,7 @@ body {
 }
 
 .presentation-texts p {
-    font-size: calc(12px + 1.5vw);
+    font-size: calc(11px + 1.5vw);
     font-weight: bold;
     margin: 8px 0;
 }
@@ -114,6 +114,16 @@ table, td, th {
 
 .footer a {
     color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(0, 0, 63);
+    border-radius: 6px;
 }
 
 @media (min-width: 500px) and (max-width: 590px) {

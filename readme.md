@@ -1,9 +1,1 @@
-I used three breakpoints:
-
-Small: 640px;
-Medium: 641px to 1007px;
-Large: 1008px+;
-
-So... I organized css using that values, from smaller to bigger.
-
-Made By MrPandous
+Site básico da expotec, a ideia é que com o passar do tempo e as atrações comecem a serem confirmadas, ele vá sendo expandido.
